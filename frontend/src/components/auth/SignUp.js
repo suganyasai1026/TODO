@@ -5,8 +5,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const SignUp = () => {
     const baseURL = process.env.BASE_URL;
-    console.log(baseURL,"hi")
-
     const history = useNavigate();
     const [Inputs, setInputs] = useState({
         email: "",
