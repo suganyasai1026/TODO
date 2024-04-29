@@ -18,7 +18,7 @@ const SignUp = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        await axios.post(`${baseURL}/user/register,Inputs`).then((response)=>{
+        await axios.post(`${baseURL}/user/register`,Inputs).then((response)=>{
           if(response.data.message==="user created"){
             setInputs({
                 email: "",
