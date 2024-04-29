@@ -3,8 +3,7 @@ import { LOGIN_USER_ERROR, LOGIN_USER_LOADING, LOGIN_USER_SUCCESS } from "./user
 
 const baseURL = process.env.REACT_APP_BASE_URL;
 export const getUser=(obj)=>async(distpatch)=>{
-
-    distpatch({type:LOGIN_USER_LOADING})
+   distpatch({type:LOGIN_USER_LOADING})
    
     try {
         let data = await axios(`${baseURL}/user/login`,{
