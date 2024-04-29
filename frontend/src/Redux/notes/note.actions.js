@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { store } from "../store"
 import { CREATE_NOTES_ERROR, CREATE_NOTES_LOADING, CREATE_NOTES_SUCCESS, DELETE_NOTES_ERROR, DELETE_NOTES_LOADING, DELETE_NOTES_SUCCESS, GET_NOTES_ERROR, GET_NOTES_LOADING, GET_NOTES_SUCCESS, UPDATE_NOTES_ERROR, UPDATE_NOTES_LOADING, UPDATE_NOTES_SUCCESS } from "./note.types"
 import { LOGOUT } from "../user/user.types"
-const baseURL = process.env.BASE_URL;
+const baseURL = process.env.REACT_APP_BASE_URL;
 export const getNotes = () => async (dispatch) => {
     
     const { token } = store.getState().userReducer

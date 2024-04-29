@@ -4,7 +4,8 @@ import HeadingComp from './HeadingComp'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const SignUp = () => {
-    const baseURL = process.env.BASE_URL;
+    const baseURL = process.env.REACT_APP_BASE_URL;
+   
     const history = useNavigate();
     const [Inputs, setInputs] = useState({
         email: "",

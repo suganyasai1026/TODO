@@ -1,7 +1,7 @@
 import axios from "axios"
 import { LOGIN_USER_ERROR, LOGIN_USER_LOADING, LOGIN_USER_SUCCESS } from "./user.types"
 
-const baseURL = process.env.BASE_URL;
+const baseURL = process.env.REACT_APP_BASE_URL;
 export const getUser=(obj)=>async(distpatch)=>{
 
     distpatch({type:LOGIN_USER_LOADING})
