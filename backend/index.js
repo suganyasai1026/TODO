@@ -13,8 +13,7 @@ app.use('/user',require("./routes/user"))
 app.use('/notes',require("./routes/notes"))
 
 app.get("/",(req,res)=>{
-    app.use(express.static(path.resolve(__dirname,"frontend","build")))
-    res.sendFile(path.resolve(__dirname,"frontend","build","index.html"))
+    res.status(200).json({ message: 'Hello, world!' });
   
 })
 app.listen(port,async()=>{
