@@ -7,8 +7,10 @@ const hostname = 'localhost';
 const bodyparser =require('body-parser')
 const cors=require('cors');
 const path =require("path")
-app.use(bodyparser.json())
+
 app.use(cors())
+
+app.use(bodyparser.json())
 app.use('/user',require("./routes/user"))
 app.use('/notes',require("./routes/notes"))
 
