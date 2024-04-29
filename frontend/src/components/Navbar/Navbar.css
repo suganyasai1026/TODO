@@ -1,0 +1,11 @@
+.navbar-brand{
+    color :rgba(240,0,0,0.8);
+    font-size: 25px;
+    font-weight:bold;
+}
+.btn-nav {
+background-color:rgba(240,0,0,0.87);
+border-radius: 5px;
+color: rgb(255, 255, 255) !important;
+font-weight: bold;
+}
